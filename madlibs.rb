@@ -1,8 +1,8 @@
 
 
-words = {container: "box", adjective: "smelly", adjective1: "shady", noun: "chlorine", animal: "racoon", vegetable: "beets", vegetable1: "carrots", color: "purple", adjective2: "icky"}
+words = {container: ["box", "penguin", "sac", "bag"], adjective: ["smelly", "shady"], noun: ["chlorine", "bacon"], animal: ["racoon", "dog", "cat"], vegetable: ["beets", "carrots"], color: ["purple", "green", "blue"]}
 
-puts "Make sure your lunch #{words[:container].downcase} is filled with nutritious #{words[:adjective]} food. Do not go to the #{words[:adjective1]} food stand across the street from school. The hamburgers they serve are fried in #{words[:noun]} and are made of #{words[:animal]} meat. So take a sandwich made of #{words[:vegetable]} and #{words[:vegetable1]} it's much healthier! Drink #{words[:color]} milk instead of #{words[:adjective2]} colas."
+puts "Make sure your lunch #{words[:container].sample} is filled with nutritious #{words[:adjective].sample} food. Do not go to the #{words[:adjective].sample} food stand across the street from school. The hamburgers they serve are fried in #{words[:noun].sample} and are made of #{words[:animal].sample} meat. So take a sandwich made of #{words[:vegetable].sample} and #{words[:vegetable].sample} it's much healthier! Drink #{words[:color].sample} milk instead of #{words[:adjective].sample} colas."
 
 container = ["box", "bag", "sac", "cup", "bowl"]
 adjective = ["stupid", "smelly", "icky", "dumb", "yellow", "moldy", "beautiful", "happy", "long", "short"]
